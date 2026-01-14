@@ -1,3 +1,4 @@
+/* 
 html {
   height: 100%;
   width: 100%;
@@ -23,8 +24,7 @@ body {
 }
 
 .olive_bg {
-  background-color: #3F4727;/*official olive color for SBHS*/
-}
+  background-color: #3F4727;official olive color for SBHS}
 
 .gold_bg {
   background-color: #EBA900;
@@ -32,4 +32,131 @@ body {
 
 p, h1, h2 {
   text-align: center;
+}
+ */
+
+/* body and most text */
+body {
+	background-color: #ffffe4;
+	color: #000000;
+	font-family: Ariel, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+star-list {
+  list-style-type: none; /* Removes default bullets */
+  padding-left: 0; /* Removes default padding */
+}
+
+.star-list li::before {
+  content: "★ "; /* Inserts a solid star character before each list item */
+  color: #2a1a1f; /* Colors the star */
+  display: inline-block;
+  width: 1em; /* Ensures consistent spacing */
+  margin-right: 0.5em;
+}
+
+/* content portion */
+#content, h3, .col-sm{
+	max-width: 900px;
+	margin: 2em auto;
+	padding: 2em;
+	background-color: #2a1a1f;
+	color: #ffffe4;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	text-align: center;
+}
+
+h1 {
+    margin: 2em auto;
+	padding: 2em;
+    background-color: #170c10;
+}
+
+h3 {
+    background-color: #170c10;
+}
+
+/* footer */
+div#footer, #intro {
+	font-size: 0.9em;
+	background-color: #764134;
+	color: #ffffe4;
+	border: 2px solid #ad9350;
+	border-radius: 12px;
+	margin: 3em auto 0 auto;
+	padding: 1em;
+	text-align: center;
+}
+
+/* link buttons */
+a.button {
+	display: inline-block;
+	padding: 0.6em 1.2em;
+	margin: 0.5em 0;
+	background-color: #ad8350;
+	color: #000000;
+	text-decoration: none;
+	border-radius: 12px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+	background-color: #764134;
+	color: #ffffe4;
+}
+
+/* Input Fields */
+input[type="text"], select {
+	padding: 0.5em;
+	margin: 0.5em 0;
+	border-radius: 10px;
+	border: 1px solid #764134;
+}
+
+/* submit buttons */
+input[type="submit"] {
+	padding: 0.5em 1em;
+	border-radius: 12px;
+	border: none;
+	background-color: #ad8350;
+	color: #000000;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: #764134;
+	color: #ffffe4;
+}
+
+/* headings */
+h1, h2 {
+	color: #ffffe4;
+}
+
+/* cat image */
+a:link, a:visited {
+background-color: #ad8350;
+color: #000000;
+padding: 6px 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+border-radius: 10px;
+}
+
+a:hover, a:active {
+background-color: #764134;
+border-radius: 10px;}
+
+img {
+width: 250px;
+height: 175px;
+border-radius: 10px;
+border: 4px solid #ad8350;
 }
